@@ -199,6 +199,10 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .pbs-copy h2 { color: #fff; font-size: clamp(1.9rem, 3.6vw, 2.9rem); margin-bottom: 22px; }
 .pbs-copy p { color: rgba(255,255,255,.82); font-size: 1.08rem; margin-top: 16px; }
 .pbs-copy em { color: var(--sun); font-style: italic; }
+.pbs-article-link a {
+  color: var(--sun); font-weight: 600; text-decoration: underline; text-underline-offset: 3px;
+}
+.pbs-article-link a:hover { color: #fff; }
 
 .principles { display: grid; gap: 16px; }
 .principle {
