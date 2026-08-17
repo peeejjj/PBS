@@ -476,6 +476,19 @@ ul.article-list { list-style: disc; }
 .article-card p { color: var(--muted); font-size: .99rem; }
 .article-card-more { display: inline-block; margin-top: 16px; font-weight: 600; color: var(--forest); }
 
+/* ---------- Print (used for the PDF versions of articles) ---------- */
+@media print {
+  .site-header, .site-footer, .nav-toggle, .mobile-nav, .article-breadcrumb, .skip-link { display: none !important; }
+  .article .btn { display: none !important; }
+  body { background: #fff; }
+  .article { padding: 0; }
+  .article-wrap { max-width: 100%; }
+  .article p a { color: var(--forest); }
+  .article-author { border: 1px solid #ccc; }
+  .print-only { display: block !important; }
+}
+.print-only { display: none; text-align: center; color: var(--muted); font-size: .9rem; margin-top: 24px; }
+
 /* ---------- Reveal animation ---------- */
 .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
 .reveal.in { opacity: 1; transform: none; }
