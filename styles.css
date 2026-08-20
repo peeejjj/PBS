@@ -455,6 +455,12 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .footer-nav a, .footer-contact a { color: rgba(255,255,255,.72); font-weight: 500; transition: color .2s; }
 .footer-nav a:hover, .footer-contact a:hover { color: var(--sun); }
 .footer-contact { display: grid; gap: 10px; }
+.footer-social { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.footer-social a {
+  border: 1px solid rgba(255,255,255,.28); padding: 6px 16px; border-radius: 999px;
+  font-size: .85rem; font-weight: 600; transition: border-color .2s, color .2s;
+}
+.footer-social a:hover { border-color: var(--sun); color: var(--sun); }
 .footer-bottom { margin-top: 44px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.12); display: flex; flex-wrap: wrap; gap: 12px 30px; justify-content: space-between; align-items: center; }
 .acknowledgement { font-size: .86rem; max-width: 620px; color: rgba(255,255,255,.55); }
 .copyright { font-size: .86rem; color: rgba(255,255,255,.55); }
