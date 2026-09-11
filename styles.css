@@ -614,3 +614,6 @@ ul.article-list { list-style: disc; }
   .coord-list li { padding: 14px 16px 14px 46px; }
 }
 .wraparound-copy p + p { margin-top: 16px; }
+
+/* Anchor targets: stop the sticky header covering the heading you jumped to */
+section[id] { scroll-margin-top: 96px; }
