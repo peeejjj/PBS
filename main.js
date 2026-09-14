@@ -78,13 +78,13 @@
 
   /* ---- Contact form ----
      No backend needed: this opens the visitor's email client with a
-     ready-to-send message to paula@akindaco.com.
+     ready-to-send message to hello@akindaco.com.
      To collect submissions on the server instead, swap this for a
      Formspree / Netlify Forms action (see README).
   --------------------------------------------------------------- */
   var form = document.getElementById("lead-form");
   var status = document.getElementById("form-status");
-  var RECIPIENT = "paula@akindaco.com";
+  var RECIPIENT = "hello@akindaco.com";
 
   if (form) {
     form.addEventListener("submit", function (e) {
